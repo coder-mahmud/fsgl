@@ -1,0 +1,36 @@
+img{
+	max-width: 100% !important;
+}
+
+
+.orange_bar{
+	border-top:2px solid $mainOrange;
+	max-width: 250px;
+	margin:30px auto;
+}
+
+.hero_area{
+	position: relative;
+	font-family: 'Caudex';
+	color:#fff;
+	.image_holder{
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		width: 100%;
+		background: url(../img/home_page_hero.jpg) no-repeat;
+		background-size: cover;
+	}
+
+	.row{
+		padding:180px 0;
+		text-align: center;
+	}
+
+}
+
+html, body{
+	overflow-x: hidden;
+}

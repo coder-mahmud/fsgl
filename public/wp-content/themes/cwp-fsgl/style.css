@@ -1,0 +1,48 @@
+/*
+Theme Name: FSGL
+Author: Md. Mahmudul Hasan
+Author URI: https://coderwp.com/connect/
+Description: Responsive Custom Theme
+*/
+
+
+/*
+body{overflow-x: hidden;}
+img{width: 100%;}
+.logo{float: left; width: 30%; display: inline-block;}
+.logo img{width: 100%;}
+
+
+.header_area{
+    margin-top: 7px;
+    margin-bottom: 10px;
+
+}
+
+.menu_holder{ padding: 0 !important; position:relative; z-index: 99; }
+.flexnav{width: auto; float: left !important;}
+.flexnav li{float: left; display: inline; text-align: center; width: auto;}
+.flexnav li a{}
+.flexnav li > ul{display: none;}
+.slider_area{margin-bottom: 65px;}
+.slider_area img{}
+
+.home_content_area{}
+.home_content_area .image_section {
+    max-width: 150px;
+    height: auto;
+    float: left;
+    margin-right: 15px;	
+}
+
+.home_content_area .text_section {margin-bottom: 65px;}
+.home_content_area .text_section .title{margin-top: -5px; margin-bottom: 0;}
+.home_content_area .text_section p{font-size: 13px;}
+
+
+.footer_area{background: #1E477F; color:#fff; text-align: center; padding:10px 0;}
+.footer_area p{ margin-top: 8px; display: inline;}
+.footer_area .footer_menu{margin-top: 8px; display:inline;}
+.footer_area .footer_menu li{list-style: none;  display: inline-block; border-right:1px solid #fff; }
+.footer_area .footer_menu li:last-child{list-style: none;  display: inline-block; border-right:0px solid #fff; }
+.footer_area .footer_menu li a{display: block; color:#fff; padding:0 10px;}
