@@ -2,14 +2,20 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <a class="social" href="#"><i class="fab fa-facebook-f"></i></a>
-                        <ul class="footer_menu">
+                        <?php
+                            $facebook = get_option_tree( 'facebook', '', false );
+                        ?>
+                        <a class="social" href="<?php echo $facebook; ?>"><i class="fab fa-facebook-f"></i></a>
+                        <!-- <ul class="footer_menu">
                           <li><a href="#">Stockists</a></li>
                           <li><a href="#">Faq</a></li>
                           <li><a href="#">Privacy</a></li>
                           <li><a href="#">Terms of use</a></li>
                           <li><a href="#">Contact</a></li>
-                        </ul>
+                        </ul> -->
+
+
+                        <?php wp_nav_menu( array( 'theme_location' => 'menu_footer' ,'container' => false,'menu_class'=> 'footer_menu') ); ?>
                     </div>
                 </div>
             </div>

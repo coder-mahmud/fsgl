@@ -23,13 +23,23 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-12 my-auto">
-                        <a class="logo" href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.png" alt=""></a>
+                        <?php
+                            $logo = get_option_tree( 'logo', '', false );
+                        ?>
+                        <a class="logo" href="#"><img src="<?php echo $logo; ?>" alt=""></a>
                         <div class="menu_holder">
-                            <ul id="menu">
-                                <li><a href="#">about us</a> </li>
-                                <li><a href="#">services</a></li>
-                                <li><a href="#">contact us</a></li>
-                            </ul>                
+
+                            <?php
+                                if (function_exists('wp_nav_menu')) {
+                                    wp_nav_menu(array('theme_location' => 'wpj-main-menu','container' => false, 'menu_id' => 'menu', 'fallback_cb' => 'wpj_default_menu'));
+                                }
+                                else {
+                                    wpj_default_menu();
+                                }
+                            ?>
+
+
+
                         </div>           
 
                     </div>
