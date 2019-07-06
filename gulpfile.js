@@ -3,6 +3,7 @@ const sass = require('gulp-sass');
 const sourcemaps = require('gulp-sourcemaps');
 const webpack = require('webpack');
 var browserSync = require('browser-sync').create();
+var concat = require('gulp-concat');
 var themeLocation = './public/wp-content/themes/cwp-fsgl';
 
 // .scss > .css
@@ -71,3 +72,20 @@ gulp.task('scriptsRefresh', gulp.series('scripts',function(callback){
 
 
 gulp.task('default', gulp.series('sass', 'watch'));
+
+
+// manual
+
+gulp.task('concatScripts', function() {
+  return gulp.src(themeLocation +'/assets/js/js-library/*.js')
+    .pipe(concat('vendor.js'))
+    .pipe(gulp.dest(themeLocation +'/assets/js/'));
+});
+
+gulp.task('concatStyles', function() {
+  return gulp.src(themeLocation +'/assets/css/css-library/*.css')
+    .pipe(concat('vendor.css'))
+    .pipe(gulp.dest(themeLocation +'/assets/css/'));
+});
+
+

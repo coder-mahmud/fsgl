@@ -1,0 +1,40 @@
+.contact_content{
+	padding:100px 0;
+
+	h1{
+		font-family: 'Caudex';
+		margin-bottom: 50px;
+	}
+	p{
+		font-size: 16px;
+		font-family: 'SpaceMono-Regular';
+	}
+
+	.smaller{
+		font-size: 14px;
+	}
+}
+
+.gform_wrapper .top_label .gfield_label, .gform_wrapper legend.gfield_label{
+	font-family: 'SpaceMono-Regular';
+	font-weight: normal !important;
+}
+
+.gform_wrapper .gform_footer input.button, .gform_wrapper .gform_footer input[type=submit], .gform_wrapper .gform_page_footer input.button, .gform_wrapper .gform_page_footer input[type=submit]{
+	background: none;
+	border:2px solid #000;
+	text-transform: uppercase;
+	padding:8px 15px;
+	padding-top: 11px;
+	transition:all .3s ease;
+	cursor: pointer;
+
+	&:hover{
+		background:#000;
+		color:#fff;
+	}
+}
+
+.gform_wrapper input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]){
+	width: 100%;
+}

@@ -1,0 +1,29 @@
+.services_hero{
+	.orange_bar{
+		max-width: 150px;
+	}
+}
+
+.call_to_action{
+	
+
+	a{
+		font-family: 'SpaceMono-Regular';
+		font-size: 13px;
+		color:#fff;
+		border:2px solid #fff;
+		border-radius: 30px;
+		padding:12px 25px;
+		text-transform: lowercase;
+		display: inline-block;
+		margin-top: 30px;
+		transition:all .3s ease;
+		margin-top: 70px;
+
+		&:hover{
+			text-decoration: none;
+			background: #fff;
+			color:#555;
+		}
+	}
+}
