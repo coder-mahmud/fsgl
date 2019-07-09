@@ -26,7 +26,7 @@
                         <?php
                             $logo = get_option_tree( 'logo', '', false );
                         ?>
-                        <a class="logo" href="#"><img src="<?php echo $logo; ?>" alt=""></a>
+                        <a class="logo" href="<?php echo home_url(); ?>"><img src="<?php echo $logo; ?>" alt=""></a>
                         <div class="menu_holder">
 
                             <?php
